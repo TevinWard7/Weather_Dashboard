@@ -5,3 +5,7 @@ body {
 .row {
     margin-top: 50px;
 }
+
+.card {
+    margin: 50px;
+}

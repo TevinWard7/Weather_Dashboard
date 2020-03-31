@@ -36,11 +36,27 @@ $(document).ready(function () {
                     method: "GET"
                 }).then(function (response) {
                     console.log(response)
+
+                    // Display Forecast Dates
                     $("#forecastday1").text(response.list[0].dt_txt);
                     $("#forecastday2").text(response.list[1].dt_txt);
                     $("#forecastday3").text(response.list[2].dt_txt);
                     $("#forecastday4").text(response.list[3].dt_txt);
                     $("#forecastday5").text(response.list[4].dt_txt);
+
+                    // Display Forecast Temperatures
+                    $("#forecast-temp1").text(response.list[0].main.temp);
+                    $("#forecast-temp2").text(response.list[1].main.temp);
+                    $("#forecast-temp3").text(response.list[2].main.temp);
+                    $("#forecast-temp4").text(response.list[3].main.temp);
+                    $("#forecast-temp5").text(response.list[4].main.temp);
+
+                    // Display Humidity 
+                    $("#forecast-humid1").text(response.list[0].main.humidity);
+                    $("#forecast-humid2").text(response.list[1].main.humidity);
+                    $("#forecast-humid3").text(response.list[2].main.humidity);
+                    $("#forecast-humid4").text(response.list[3].main.humidity);
+                    $("#forecast-humid5").text(response.list[4].main.humidity);
                 });
             });
 
