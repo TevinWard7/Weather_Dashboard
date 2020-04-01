@@ -7,5 +7,6 @@ body {
 }
 
 .card {
-    margin: 50px;
+    margin: 70px;
+    background-image: url(https://openweathermap.org/themes/openweathermap/assets/img/Open-weather-main-page.png);
 }
