@@ -6,7 +6,30 @@ body {
     margin-top: 50px;
 }
 
+.uv-ok {
+    border-style: solid;
+    border-color: yellow;
+}
+
+.uv-moderate {
+    border-style: solid;
+    border-color: gray;
+}
+
+.uv-severe {
+    border-style: solid;
+    border-color: red;
+}
+
+.collection-item {
+    text-align: center;
+}
+
 .card {
     margin: 70px;
     background-image: url(https://openweathermap.org/themes/openweathermap/assets/img/Open-weather-main-page.png);
+}
+
+.hot {
+    background-image: url(https://icons.iconarchive.com/icons/custom-icon-design/weather/256/Sunny-icon.png);
 }
